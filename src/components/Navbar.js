@@ -1,7 +1,12 @@
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   return (
     <nav className={`container max-w-5xl py-3 flex items-center justify-between sm:flex-col sm:gap-2`}>
@@ -20,7 +25,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <ul className="flex items-center gap-4 font-medium">
+      <ul className="flex items-center gap-4 ">
         <li>
           <Link href="#about">About</Link>
         </li>
@@ -38,6 +43,24 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="#contact">Contact</Link>
+        </li>
+
+        <li className="theme-toggle" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+          {mounted && (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.931 473.931" className="h-8">
+              {resolvedTheme === "dark" ? (
+                <>
+                  <circle cx="236.966" cy="236.966" r="236.966" fill="#f2be3e" />
+                  <circle cx="236.966" cy="236.966" r="117.154" fill="#f1eb75" />
+                </>
+              ) : (
+                <>
+                  <circle cx="236.966" cy="236.966" r="236.966" fill="#22272E" />
+                  <circle cx="236.966" cy="236.966" r="117.154" fill="#717171" />
+                </>
+              )}
+            </svg>
+          )}
         </li>
       </ul>
     </nav>

@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="flex items-center justify-between gap-12 h-[calc(100vh-5rem)] md:h-full md:flex-col-reverse md:gap-4 pb-8">
       <div className="sm:pb-4">
         <h1 className="mt-4">
-          <span className="text-2xl font-medium text-orange-400 opacity-90">Dynamic Biz —</span>
+          <span className="text-2xl font-medium text-orange-600 dark:text-orange-400 opacity-90">Dynamic Biz —</span>
           <br />
           <span className="text-6xl lg:text-5xl xmd:text-4xl md:text-6xl font-semibold">
             We transform <br className="md:hidden" />
@@ -15,7 +15,7 @@ const Hero = () => {
         </h1>
 
         <Link href="#works">
-          <button className="mt-4 py-2 px-4 bg-sky-300 text-black text-lg font-medium rounded-md">View Projects</button>
+          <button className="mt-4 py-2 px-4 bg-sky-600 text-white dark:bg-sky-300 dark:text-black text-lg font-medium rounded-md">View Projects</button>
         </Link>
       </div>
 
@@ -538,24 +538,6 @@ const Hero = () => {
         />
       </svg>
     </section>
-
-    // <section className="h-screen">
-    //   <div className="h-screen relative">
-    //     <Image src="/daniel-korpai-pKRNxEguRgM-unsplash.jpg" className="h-full w-full object-cover" height={600} width={600} />
-    //     <div className="bg-black absolute top-0 w-full h-full opacity-60" />
-    //   </div>
-
-    //   <div className="container max-w-5xl absolute bottom-8 left-0 right-0">
-    //     <h1 className="mt-4">
-    //       <span className="text-2xl font-medium text-orange-400 opacity-90">Dynamic Biz —</span>
-    //       <br />
-    //       <span className="text-6xl xmd:text-5xl sm:text-4xl font-semibold">
-    //         We transform <br className="md:hidden" />
-    //         your ideas into <br className="md:hidden" /> code!
-    //       </span>
-    //     </h1>
-    //   </div>
-    // </section>
   );
 };
 

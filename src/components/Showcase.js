@@ -10,7 +10,7 @@ const Showcase = () => {
       <div className="grid grid-cols-3 gap-4 my-8 md:grid-cols-2 sm:grid-cols-1">
         {projects.map(({ title, thumbnail, url, stack }, index) => {
           return (
-            <div className="bg-zinc-800 rounded-md group" key={index}>
+            <div className="bg-gray-300 dark:bg-zinc-800 dark:text-white rounded-md group" key={index}>
               <Link href={url} target="_blank">
                 <div className="relative">
                   <Image src={thumbnail} width={400} height={200} className="rounded-t-md w-full h-auto" />
@@ -22,7 +22,7 @@ const Showcase = () => {
                   </div>
                 </div>
               </Link>
-              <p className="mx-4 mt-4 mb-2 text-sm bg-zinc-600 px-2 w-fit">{stack}</p>
+              <p className="mx-4 mt-4 mb-2 text-sm bg-zinc-400 dark:bg-zinc-600 text-neutral-900 px-2 w-fit">{stack}</p>
               <p className="mx-4 pb-2 text-2xl font-semibold">{title}</p>
             </div>
           );
