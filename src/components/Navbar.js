@@ -1,8 +1,12 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const router = useRouter();
+  const hash = router.asPath.split("#")[1];
+
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -25,23 +29,23 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <ul className="flex items-center gap-4 ">
-        <li>
+      <ul className="flex items-center gap-4">
+        <li className={hash == "about" && "font-semibold underline underline-offset-4"}>
           <Link href="#about">About</Link>
         </li>
-        <li>
+        <li className={hash == "services" && "font-semibold underline underline-offset-4"}>
           <Link href="#services">Services</Link>
         </li>
-        <li>
+        <li className={hash == "works" && "font-semibold underline underline-offset-4"}>
           <Link href="#works">Works</Link>
         </li>
-        {/* <li>
+        {/* <li className={hash == "" && "font-semibold underline underline-offset-4"}>
           <Link href="/">Testimonial</Link>
         </li> */}
-        <li>
+        <li className={hash == "team" && "font-semibold underline underline-offset-4"}>
           <Link href="#team">Team</Link>
         </li>
-        <li>
+        <li className={hash == "contact" && "font-semibold underline underline-offset-4"}>
           <Link href="#contact">Contact</Link>
         </li>
 

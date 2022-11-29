@@ -12,7 +12,7 @@ const Contact = () => {
 
           <h4 className="text-lg sm:text-md mt-4 mb-1">Email</h4>
           <p className="font-semibold w-fit">
-            <a href="mailto:dynamicbiz4@gmail.com">dynamicbiz4@gmail.com</a>
+            <a href="mailto:hellodynamicbiz@gmail.com">hellodynamicbiz@gmail.com</a>
           </p>
 
           <h4 className="text-lg sm:text-md mt-4 mb-1">Find Us On</h4>
