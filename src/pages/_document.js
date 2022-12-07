@@ -24,7 +24,7 @@ export default function Document() {
 
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
-      <body className="scroll-smooth bg-gray-200 text-neutral-900 dark:bg-dynamic-dark dark:text-white">
+      <body className="scroll-smooth bg-gray-200 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors">
         <Main />
         <NextScript />
       </body>
