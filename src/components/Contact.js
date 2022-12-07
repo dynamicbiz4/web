@@ -56,7 +56,7 @@ const Contact = () => {
                 First Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border rounded p-3 leading-tight focus:outline-none focus:bg-white"
                 id="grid-first-name"
                 type="text"
                 name="firstName"
@@ -69,7 +69,7 @@ const Contact = () => {
                 Last Name
               </label>
               <input
-                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded p-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
                 name="lastName"
@@ -84,7 +84,7 @@ const Contact = () => {
                 Email
               </label>
               <input
-                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded p-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="email"
                 type="email"
                 name="mail"
@@ -99,7 +99,7 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                className="appearance-none block w-full bg-gray-300 dark:bg-gray-200 dark:text-gray-700 border border-gray-200 rounded p-3 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
                 name="message"
                 placeholder="I would like to ask you..."

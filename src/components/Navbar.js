@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <nav className={`container max-w-5xl py-3 flex items-center justify-between sm:flex-col sm:gap-2`}>
+    <nav className="container max-w-5xl py-3 flex items-center justify-between sm:flex-col sm:gap-2">
       <Link href="/">
         <div className="flex gap-2 items-center">
           <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.36 424.36" className="h-11 sm:h-9">
@@ -30,22 +30,22 @@ const Navbar = () => {
       </Link>
 
       <ul className="flex items-center gap-4">
-        <li className={hash == "about" && "font-semibold underline underline-offset-4"}>
+        <li className={hash == "about" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="#about">About</Link>
         </li>
-        <li className={hash == "services" && "font-semibold underline underline-offset-4"}>
+        <li className={hash == "services" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="#services">Services</Link>
         </li>
-        <li className={hash == "works" && "font-semibold underline underline-offset-4"}>
+        <li className={hash == "works" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="#works">Works</Link>
         </li>
-        {/* <li className={hash == "" && "font-semibold underline underline-offset-4"}>
+        {/* <li className={hash == "" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="/">Testimonial</Link>
         </li> */}
-        <li className={hash == "team" && "font-semibold underline underline-offset-4"}>
+        <li className={hash == "team" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="#team">Team</Link>
         </li>
-        <li className={hash == "contact" && "font-semibold underline underline-offset-4"}>
+        <li className={hash == "contact" ? "font-semibold underline underline-offset-4" : undefined}>
           <Link href="#contact">Contact</Link>
         </li>
 

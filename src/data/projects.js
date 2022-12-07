@@ -11,4 +11,16 @@ export const projects = [
     url: "https://dynamicbiz.xyz/Projects/E-commerce-template/",
     stack: "PHP",
   },
+  {
+    title: "Pixel1080",
+    thumbnail: "/projects/pixel1080.png",
+    url: "https://pixel1080.dynamicbiz.org.lk",
+    stack: "Next.JS (React)",
+  },
+  {
+    title: "Cafe Web Template",
+    thumbnail: "/projects/yellow-cafe.png",
+    url: "https://yellow-cafe.vercel.app",
+    stack: "Next.JS (React)",
+  },
 ];

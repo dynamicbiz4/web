@@ -38,7 +38,7 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </Head>
 
-      <header className={`sticky ${visible && "top-0 bg-gray-200 text-neutral-900 dark:bg-dynamic-dark dark:text-white"} z-20`}>
+      <header className={`sticky ${visible ? "top-0 bg-gray-200 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors" : undefined} z-20`}>
         <Navbar />
       </header>
 

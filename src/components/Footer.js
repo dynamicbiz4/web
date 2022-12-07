@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="container max-w-5xl mt-6 py-8 bg-gray-300 dark:bg-zinc-900 dark:text-white flex items-start justify-between sm:block sm:space-y-2 sm:text-center">
+    <footer className="container max-w-5xl mt-6 py-8 bg-gray-300 dark:bg-neutral-800 dark:text-white flex items-start justify-between sm:block sm:space-y-2 sm:text-center">
       <p>
         Copyright &copy; {new Date().getFullYear()} <span>Dynamic Biz</span>. All Rights Reserved.
       </p>

@@ -30,17 +30,17 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-4 mt-10 md:grid-cols-2 sm:grid-cols-1">
-        <div className="bg-gray-300 dark:bg-zinc-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Vision</h3>
           <p>Dynamic Biz is moving forward with changing world with modern technology &amp; becoming a world to provide technical solutions.</p>
         </div>
 
-        <div className="bg-gray-300 dark:bg-zinc-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Mission</h3>
           <p>To develop lasting client relationships by providing exceptional stakeholder value in an environment of trust &amp; respect.</p>
         </div>
 
-        <div className="bg-gray-300 dark:bg-zinc-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Core values</h3>
           <div className="flex gap-12">
             <ul className="ml-4 list-disc">
