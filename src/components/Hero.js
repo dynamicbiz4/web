@@ -10,8 +10,8 @@ const Hero = () => {
             <span className="text-2xl font-medium text-orange-600 dark:text-orange-400 opacity-90">Dynamic Biz —</span>
             <br />
             <span className="text-6xl lg:text-5xl xmd:text-4xl md:text-6xl font-semibold">
-              Every problem<br className="md:hidden" />
-              has a<br className="md:hidden" />
+              Every problem <br className="md:hidden" />
+              has a <br className="md:hidden" />
               Digital Solution!
             </span>
           </h1>
@@ -541,13 +541,13 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="bg-design absolute bottom-1/2 -translate-y-10 left-full -z-20">
+      <div className="bg-design absolute bottom-1/2 -translate-y-10 left-full -z-20 md:hidden">
         <div className="h-[100vh] w-[100vh] rounded-full bg-orange-100 dark:bg-orange-800 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
         <div className="h-[75vh] w-[75vh] rounded-full bg-orange-200 dark:bg-orange-700 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
         <div className="h-[50vh] w-[50vh] rounded-full bg-orange-300 dark:bg-orange-600 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
       </div>
 
-      <div className="dots absolute top-1/4 left-56 grid grid-cols-6 gap-4 rotate-45 -z-20">
+      <div className="dots absolute top-1/4 left-56 grid grid-cols-6 gap-4 rotate-45 -z-20 lg:hidden">
         <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
         <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
         <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
