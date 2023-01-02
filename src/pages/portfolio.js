@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import Footer from "../components/Footer";
 import Grid from "../components/Grid";
 import Navbar from "../components/Navbar";
 import { projects } from "../data/projects";
@@ -25,6 +24,8 @@ const ECommerce = () => (
       title={"Dynamic Web Solutions For Education"}
     />
     <Grid data={projects.other} title={"Other Web Solutions"} />
+
+    <Footer />
   </>
 );
 

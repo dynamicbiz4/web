@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="pb-8 relative">
-      <div className="container max-w-5xl h-[calc(100vh-5rem)] md:h-full flex items-center justify-between gap-12 md:flex-col-reverse md:gap-4">
+      <div className="container max-w-5xl h-screen md:h-full flex items-center justify-between gap-12 md:flex-col-reverse md:gap-4">
         <div className="sm:pb-4">
           <h1 className="mt-4">
             <span className="text-2xl font-medium text-orange-600 dark:text-orange-400 opacity-90">Dynamic Biz —</span>
@@ -542,48 +542,48 @@ const Hero = () => {
       </div>
 
       <div className="bg-design absolute bottom-1/2 -translate-y-10 left-full -z-20">
-        <div className="h-[54vh] w-[54vh] rounded-full bg-gray-100 dark:bg-neutral-800 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
-        <div className="h-[42vh] w-[42vh] rounded-full bg-gray-200 dark:bg-neutral-700 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
-        <div className="h-[30vh] w-[30vh] rounded-full bg-gray-300 dark:bg-neutral-600 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
+        <div className="h-[100vh] w-[100vh] rounded-full bg-orange-100 dark:bg-orange-800 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
+        <div className="h-[75vh] w-[75vh] rounded-full bg-orange-200 dark:bg-orange-700 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
+        <div className="h-[50vh] w-[50vh] rounded-full bg-orange-300 dark:bg-orange-600 absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" />
       </div>
 
       <div className="dots absolute top-1/4 left-56 grid grid-cols-6 gap-4 rotate-45 -z-20">
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
-        <div className="h-4 w-4 rounded-full bg-gray-200 dark:bg-neutral-800" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
+        <div className="h-4 w-4 rounded-full bg-sky-200 dark:bg-sky-900" />
       </div>
 
       {/* <div className="dots absolute bottom-20 left-1/2 grid grid-cols-6 gap-2 rotate-45 -z-20">

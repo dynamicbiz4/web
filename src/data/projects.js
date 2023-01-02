@@ -3,7 +3,19 @@ export const projects = {
     {
       title: "eCommerce Web Template",
       thumbnail: "/projects/new-tech.png",
-      url: "https://dynamicbiz.xyz/Projects/E-commerce-template/",
+      url: "https://gamestoree.epizy.com/?i=1",
+      stack: "PHP",
+    },
+    {
+      title: "PiXMart",
+      thumbnail: "/projects/pixmart.png",
+      url: "https://pixbin.rf.gd",
+      stack: "PHP",
+    },
+    {
+      title: "Shellin Store",
+      thumbnail: "/projects/shellin.png",
+      url: "https://justonroad.xyz:8090/preview/shellin.justonroad.xyz/store/index.php",
       stack: "PHP",
     },
   ],

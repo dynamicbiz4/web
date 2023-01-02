@@ -44,8 +44,14 @@ export default function Home() {
             : undefined
         } z-20`}
       >
-        <Navbar showNavLinks={true}/>
+        <Navbar showNavLinks={true} />
       </header>
+
+      {/* <header
+        className={`fixed top-0 right-0 left-0 text-neutral-900 dark:bg-neutral-900 dark:text-white  duration-200 transition-colors z-20`}
+      >
+        <Navbar showNavLinks={true} />
+      </header> */}
 
       <main className="overflow-x-hidden scroll-smooth">
         <Hero />
