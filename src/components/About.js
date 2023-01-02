@@ -1,4 +1,5 @@
 import React from "react";
+import { stats } from "../data/stats";
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-4 mt-10 md:grid-cols-2 sm:grid-cols-1">
-        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-200 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Vision</h3>
           <p>
             Dynamic Biz is moving forward with changing world with modern
@@ -41,7 +42,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-200 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Mission</h3>
           <p>
             To develop lasting client relationships by providing exceptional
@@ -49,7 +50,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-gray-300 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
+        <div className="bg-gray-200 dark:bg-neutral-800 dark:text-white p-3 rounded-lg">
           <h3 className="text-2xl font-semibold mb-2">Core values</h3>
           <div className="flex gap-12">
             <ul className="ml-4 list-disc">
@@ -94,6 +95,23 @@ const About = () => {
           <div></div>
         </div>
       </div> */}
+
+      <div className="grid grid-cols-3 gap-4 mt-10 md:grid-cols-2 sm:grid-cols-1">
+        {stats.map(({ title, count }, index) => {
+          return (
+            <div
+              className="border border-gray-300 dark:border-neutral-600 dark:text-white p-3 rounded-lg text-center py-8"
+              key={index}
+            >
+              <div className="flex justify-center">
+                <h3 className="text-6xl font-semibold">{count}</h3>
+                <p className="text-4xl font-bold ml-1">+</p>
+              </div>
+              <p className="text-lg font-medium">{title}</p>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 };

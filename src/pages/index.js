@@ -40,7 +40,7 @@ export default function Home() {
       <header
         className={`sticky ${
           visible
-            ? "top-0 bg-gray-100 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors"
+            ? "top-0 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white  duration-200 transition-colors"
             : undefined
         } z-20`}
       >
