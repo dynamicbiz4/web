@@ -10,11 +10,11 @@ const Team = () => {
   const { height, width } = useWindowDimensions();
 
   return (
-    <section className="text-center mt-6 pt-4" id="team">
+    <section className="container max-w-5xl text-center mt-6 pt-4" id="team">
       <h1 className="text-4xl font-semibold">Our Team</h1>
 
       <Swiper
-        slidesPerView={width > 820 ? 4 : width > 660 ? 3 : width > 400 ? 2 : width < 400 && 1}
+        slidesPerView={width > 920 ? 4 : width > 680 ? 3 : width > 460 ? 2 : width < 460 && 1}
         spaceBetween={5}
         autoplay={{
           delay: 3000,
@@ -27,22 +27,25 @@ const Team = () => {
         {team.map(({ name, positions, avatar }, index) => {
           return (
             <SwiperSlide key={index}>
-              <Image src={avatar} width={200} height={200} className="rounded-full block m-auto" alt={avatar.replace("/team/", "")} />
+              <div className="h-52 w-52 m-auto">
+                <Image src={avatar} width={200} height={200} className="rounded-full h-full w-full block m-auto object-cover" alt={avatar.replace("/team/", "")} />
+              </div>
               <div>
                 <p className="mt-4 text-xl font-semibold">{name}</p>
 
-                {positions.map((position) => {
+                {positions.map((position, index) => {
                   return (
-                    <p className="leading-tight text-sm">
+                    <p className="leading-tight text-sm" key={index}>
                       <i>{position}</i>
                     </p>
                   );
                 })}
-              </div>{" "}
+              </div>
             </SwiperSlide>
           );
         })}
       </Swiper>
+      
 
       {/* <div className="row my-8 pb-4 flex gap-6 overflow-auto shrink-0">
         {team.map(({ name, positions, avatar }, index) => {
