@@ -49,9 +49,9 @@ export const team = [
   //   positions: ["Marketing Executive "],
   //   avatar: "/team/.jpg",
   // },
-  // {
-  //   name: "Roshel Keziah",
-  //   positions: ["Head of Content", "Head of Innovations"],
-  //   avatar: "/team/.jpg",
-  // },
+  {
+    name: "Roshel Keziah",
+    positions: ["Head of Content", "Head of Innovations"],
+    avatar: "/team/roshel.jpg",
+  },
 ];

@@ -2,8 +2,8 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="mt-6 pt-4" id="services">
-      <h1 className="text-center text-4xl font-semibold">What We Do</h1>
+    <section className="container max-w-5xl mt-6 pt-4" id="services">
+      <h1 className="text-center text-4xl font-semibold">What We Do?</h1>
 
       <div className="mt-4 grid grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1">
         <div className=" bg-gray-300 dark:bg-neutral-800 dark:text-white p-4 rounded-md">
@@ -28,7 +28,7 @@ const Services = () => {
           <p className="opacity-90">We will identify a custom solution to fit your idea, timeline, budget and build the application.</p>
         </div>
 
-        <div className=" bg-gray-300 dark:bg-neutral-800 dark:text-white p-4 rounded-md">
+        {/* <div className=" bg-gray-300 dark:bg-neutral-800 dark:text-white p-4 rounded-md">
           <div className="bg-neutral-900 p-5 rounded-3xl w-20 h-20">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" className="h-full w-full fill-zinc-200 block m-auto">
               <path d="M192 96c26.5 0 48-21.5 48-48S218.5 0 192 0s-48 21.5-48 48 21.5 48 48 48zm-8 384V352h16v128c0 17.7 14.3 32 32 32s32-14.3 32-32V192h136c17.7 0 32-14.3 32-32s-14.3-32-32-32h-16V64h192v192H384v-32h-64v48c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H368c-26.5 0-48 21.5-48 48v80H177.1c-33.7 0-64.9 17.7-82.3 46.6l-58.3 97c-9.1 15.1-4.2 34.8 10.9 43.9s34.8 4.2 43.9-10.9l28.7-47.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32z" />
@@ -48,7 +48,7 @@ const Services = () => {
 
           <h2 className="mt-4 mb-2 text-2xl font-medium leading-tight">System Development</h2>
           <p className="opacity-90">We help you in the process of defining, designing, testing, and implementing a new software application.</p>
-        </div>
+        </div> */}
 
         <div className=" bg-gray-300 dark:bg-neutral-800 dark:text-white p-4 rounded-md">
           <div className="bg-neutral-900 p-5 rounded-3xl w-20 h-20">

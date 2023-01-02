@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact">
+    <section className="container max-w-5xl " id="contact">
       <div className="mb-8 pt-4 flex gap-10 sm:flex-col">
         <div className="w-1/2 sm:w-full">
           <h1 className="text-6xl sm:text-5xl fond-semibold mb-4">Have a Project in mind?</h1>

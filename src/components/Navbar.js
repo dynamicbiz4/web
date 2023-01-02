@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ showNavLinks }) => {
   const router = useRouter();
   const hash = router.asPath.split("#")[1];
 
@@ -16,7 +16,12 @@ const Navbar = () => {
     <nav className="container max-w-5xl py-3 flex items-center justify-between sm:flex-col sm:gap-2">
       <Link href="/">
         <div className="flex gap-2 items-center">
-          <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.36 424.36" className="h-11 sm:h-9">
+          <svg
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 424.36 424.36"
+            className="h-11 sm:h-9"
+          >
             <circle cx="212.18" cy="212.18" r="212.18" fill="#f79050" />
             <circle cx="212.18" cy="212.18" r="162.65" fill="#f1f2f2" />
             <path
@@ -30,37 +35,85 @@ const Navbar = () => {
       </Link>
 
       <ul className="flex items-center gap-4">
-        <li className={hash == "about" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="#about">About</Link>
-        </li>
-        <li className={hash == "services" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="#services">Services</Link>
-        </li>
-        <li className={hash == "works" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="#works">Works</Link>
-        </li>
-        {/* <li className={hash == "" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="/">Testimonial</Link>
-        </li> */}
-        <li className={hash == "team" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="#team">Team</Link>
-        </li>
-        <li className={hash == "contact" ? "font-semibold underline underline-offset-4" : undefined}>
-          <Link href="#contact">Contact</Link>
-        </li>
+        {showNavLinks && (
+          <>
+            <li
+              className={
+                hash == "about" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="#about">Why Us?</Link>
+            </li>
+            <li
+              className={
+                hash == "services" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="#services">What We Do?</Link>
+            </li>
+            <li
+              className={
+                hash == "works" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="/portfolio">Portfolio</Link>
+            </li>
+            <li
+              className={
+                hash == "team" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="#team">Team</Link>
+            </li>
+            <li
+              className={
+                hash == "contact" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="#contact">Contact</Link>
+            </li>
+          </>
+        )}
 
-        <li className="theme-toggle" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+        <li
+          className="theme-toggle"
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+        >
           {mounted && (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.931 473.931" className="h-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 473.931 473.931"
+              className="h-8"
+            >
               {resolvedTheme === "dark" ? (
                 <>
-                  <circle cx="236.966" cy="236.966" r="236.966" fill="#f2be3e" />
-                  <circle cx="236.966" cy="236.966" r="117.154" fill="#f1eb75" />
+                  <circle
+                    cx="236.966"
+                    cy="236.966"
+                    r="236.966"
+                    fill="#f2be3e"
+                  />
+                  <circle
+                    cx="236.966"
+                    cy="236.966"
+                    r="117.154"
+                    fill="#f1eb75"
+                  />
                 </>
               ) : (
                 <>
-                  <circle cx="236.966" cy="236.966" r="236.966" fill="#22272E" />
-                  <circle cx="236.966" cy="236.966" r="117.154" fill="#717171" />
+                  <circle
+                    cx="236.966"
+                    cy="236.966"
+                    r="236.966"
+                    fill="#22272E"
+                  />
+                  <circle
+                    cx="236.966"
+                    cy="236.966"
+                    r="117.154"
+                    fill="#717171"
+                  />
                 </>
               )}
             </svg>

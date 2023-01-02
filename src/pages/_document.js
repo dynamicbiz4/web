@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         <meta name="title" content="Dynamic Biz | Innovate • Connect • Inspire • Invests" />
         <meta name="description" content="We transform your ideas into code!" />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dynamicbiz.org.lk/" />
@@ -24,7 +25,7 @@ export default function Document() {
 
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
-      <body className="scroll-smooth bg-gray-200 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors">
+      <body className="scroll-smooth bg-gray-100 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors">
         <Main />
         <NextScript />
       </body>
