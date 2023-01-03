@@ -39,17 +39,18 @@ const Navbar = ({ showNavLinks }) => {
           <>
             <li
               className={
-                hash == "about" ? "font-semibold text-orange-500" : undefined
-              }
-            >
-              <Link href="#about">Why Us?</Link>
-            </li>
-            <li
-              className={
                 hash == "services" ? "font-semibold text-orange-500" : undefined
               }
             >
               <Link href="#services">What We Do?</Link>
+            </li>
+            
+            <li
+              className={
+                hash == "about" ? "font-semibold text-orange-500" : undefined
+              }
+            >
+              <Link href="#about">Why Us?</Link>
             </li>
             <li
               className={

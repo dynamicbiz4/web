@@ -55,8 +55,8 @@ export default function Home() {
 
       <main className="overflow-x-hidden scroll-smooth">
         <Hero />
-        <About />
         <Services />
+        <About />
         <Team />
         <Contact />
       </main>
