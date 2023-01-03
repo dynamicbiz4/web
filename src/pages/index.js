@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
-import Showcase from "../components/Showcase";
+import Showcase from "../components/Grid";
 import Team from "../components/Team";
 
 export default function Home() {
@@ -35,18 +35,28 @@ export default function Home() {
     <>
       <Head>
         <title>Dynamic Biz | Innovate • Connect • Inspire • Invests</title>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </Head>
 
-      <header className={`sticky ${visible ? "top-0 bg-gray-200 text-neutral-900 dark:bg-neutral-900 dark:text-white duration-200 transition-colors" : undefined} z-20`}>
-        <Navbar />
+      <header
+        className={`sticky ${
+          visible
+            ? "top-0 bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white  duration-200 transition-colors"
+            : undefined
+        } z-20`}
+      >
+        <Navbar showNavLinks={true} />
       </header>
 
-      <main className="container max-w-5xl scroll-smooth">
+      {/* <header
+        className={`fixed top-0 right-0 left-0 text-neutral-900 dark:bg-neutral-900 dark:text-white  duration-200 transition-colors z-20`}
+      >
+        <Navbar showNavLinks={true} />
+      </header> */}
+
+      <main className="overflow-x-hidden scroll-smooth">
         <Hero />
         <About />
         <Services />
-        <Showcase />
         <Team />
         <Contact />
       </main>
