@@ -25,6 +25,11 @@ export const projects = {
       thumbnail: "/projects/yellow-cafe.png",
       url: "https://yellow-cafe.vercel.app",
       stack: "Next.JS (React)",
+    },{
+      title: "Construction Company Web",
+      thumbnail: "/projects/construction-company-web.png",
+      url: "https://construction-company-web.vercel.app",
+      stack: "HTML",
     },
   ],
   education: [
