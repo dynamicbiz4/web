@@ -29,12 +29,12 @@ const Grid = ({ data, title }) => {
                       alt={title}
                     />
 
-                    <div className="bg-black absolute w-full h-full top-0 opacity-0 group-hover:opacity-60 group-hover:blur-xl rounded-md" />
+                    <div className="bg-black absolute w-full h-full top-0 opacity-0 group-hover:opacity-60 rounded-md" />
                     <div className="absolute left-2 bottom-2 opacity-0 group-hover:opacity-100">
                       <p className="mx-4 mt-4 mb-2 text-sm bg-zinc-400 dark:bg-zinc-600 text-neutral-900 dark:text-white px-2 w-fit">
                         {stack}
                       </p>
-                      <p className="mx-4 pb-2 text-2xl font-semibold">
+                      <p className="mx-4 pb-2 text-2xl font-semibold text-white">
                         {title}
                       </p>
                     </div>
