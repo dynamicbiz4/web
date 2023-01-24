@@ -21,11 +21,18 @@ export const projects = {
   ],
   business: [
     {
+      title: "Jason Agri Exports (PVT) Limited",
+      thumbnail: "/projects/jason-agri.png",
+      url: "https://jasonagriexports.com/",
+      stack: "Next.JS (React)",
+    },
+    {
       title: "Cafe Web Template",
       thumbnail: "/projects/yellow-cafe.png",
       url: "https://yellow-cafe.vercel.app",
       stack: "Next.JS (React)",
-    },{
+    },
+    {
       title: "Construction Company Web",
       thumbnail: "/projects/construction-company-web.png",
       url: "https://construction-company-web.vercel.app",
